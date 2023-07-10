@@ -30,6 +30,7 @@ namespace TestFilesOperations
                 var filedetail = fileInfo.FileCount != 0 ?
                  fileInfo.FileExtention + " - " + fileInfo.FileCount :
                  fileInfo.FileExtention;
+                prevousFilePath = fileInfo.DirectoryPath;
                 Console.WriteLine(filedetail);
             }
         }
